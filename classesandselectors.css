@@ -1,0 +1,41 @@
+.error{ /* Only grab p with error, otherwise just .error */
+    color: red;
+}
+p.success{
+    color: #359c35;
+}
+p.success.feedback{
+    border: 2px dotted #359c35;
+}
+#content{
+    background-color: #ebebeb;
+    padding: 20px
+}
+div p{
+    background-color: rgba(0, 0, 0, 0.123);
+}
+div .error{
+    color: purple;
+}
+/* look for every tag with the attribute in the [] */
+a[href]{
+    background-color: #359c35;
+    padding: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* use the full href="https://www.github.com", or shorthand as shown below to style any href with that content. Use $ instead of * to target if it ends with the content.*/
+a[href*="github"]{
+    color: white;
+}
+
+/* Force inheritance */
+div{
+    border: 1px solid lightcoral;
+    margin: 40px;
+}
+p{
+    border: inherit;
+    margin: inherit;
+}

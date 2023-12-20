@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <h1>HTML Forms</h1>
+
+    <form action="">
+        <label for="username"><b>Username:</b></label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <br><br>
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <hr>
+        
+        <label for="radioform">Select your age:</label>
+        <div id="radioform">
+            <input type="radio" name="age" value="0-25" id="option1">
+            <label for="option1">0-25</label>
+            <br>
+            <input type="radio" name="age" value="26-50" id="option2">
+            <label for="option2">26-50</label>
+            <br>
+            <input type="radio" name="age" value="51+" id="option3">
+            <label for="option3">51+</label>
+        </div>
+
+        <hr>
+
+        <label for="select">Secutiry Questions:</label>
+        <select name="select" id="select">
+            <option value="q1">What colour are your favourite pair of socks?</option>
+            <option value="q2">If you could be a vegetable, what would it be?</option>
+            <option value="q3">What is your best ever security question?</option>
+        </select>
+        <br>
+        <label for="answer">Security Question answer:</label>
+        <input type="text" id="answer">
+
+        <hr>
+
+        <label for="biography">Your Biography:</label>
+        <br>
+        <textarea name="biography" id="biography" cols="30" rows="10" placeholder="about you..."></textarea>
+
+        <hr>
+
+        <input type="submit" value="Submit the Form">
+    </form>
+</body>
+</html>
